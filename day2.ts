@@ -83,20 +83,16 @@ const getPlayBasedOnOutcome = (play: Play): Play => {
   for (let i = 0; i < keys.length; i++) {
     const key = keys[i];
     if (play[0] === key[0]) {
-      if (play.split(',')[1] === 'X') {
-        if (ruleset[key] === 0) {
-          return [play[0], key.split(',')[1]].join() as Play;
-        }
+      if (play.split(',')[1] === 'X' && ruleset[key] === 0) {
+        return [play[0], key.split(',')[1]].join() as Play;
       }
-      if (play.split(',')[1] === 'Y') {
-        if (ruleset[key] === 3) {
-          return [play[0], key.split(',')[1]].join() as Play;
-        }
+
+      if (play.split(',')[1] === 'Y' && ruleset[key] === 3) {
+        return [play[0], key.split(',')[1]].join() as Play;
       }
-      if (play.split(',')[1] === 'Z') {
-        if (ruleset[key] === 6) {
-          return [play[0], key.split(',')[1]].join() as Play;
-        }
+
+      if (play.split(',')[1] === 'Z' && ruleset[key] === 6) {
+        return [play[0], key.split(',')[1]].join() as Play;
       }
     }
   }
