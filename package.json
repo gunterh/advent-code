@@ -1,0 +1,22 @@
+{
+  "name": "advent-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "day10.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gunterh/advent-code.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gunterh/advent-code/issues"
+  },
+  "homepage": "https://github.com/gunterh/advent-code#readme",
+  "dependencies": {
+    "xstate": "^4.35.0"
+  }
+}
